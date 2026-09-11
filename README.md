@@ -37,20 +37,18 @@ This lab provides a controlled environment for practicing cybersecurity, network
 
 | Component       | Configuration      |
 | --------------- | ------------------ |
-| Host OS         | Windows 11         |
+| Host OS         | Windows 10         |
 | Host RAM        | 8 GB               |
-| Processor       | Intel Core i3      |
+| Processor       | Intel Core i5      |
 | Hypervisor      | VMware Workstation |
 | Security OS     | Kali Linux         |
 | Kali RAM        | 2048 MB            |
 | Virtual Network | VMnet8 (NAT)       |
 | Network Type    | NAT                |
-| Network Address | `YOUR_NETWORK/24`  |
-| Kali IP Address | `YOUR_KALI_IP/24`  |
-| Default Gateway | `YOUR_GATEWAY`     |
-| DNS Server      | `YOUR_DNS`         |
-
-> **Note:** Replace the network values above with the actual values from your VMware/Kali configuration.
+| Network Address | `10.0.0.0/24`  |
+| Kali IP Address | `10.0.0.2/24`  |
+| Default Gateway | `10.0.0.1`     |
+| DNS Server      | `8.8.8.8`      |
 
 ---
 
@@ -62,9 +60,6 @@ This lab provides a controlled environment for practicing cybersecurity, network
 
 It was used to extract the downloaded Kali Linux virtual machine files.
 
-### Screenshot
-
-📸 **Screenshot 1:** 7-Zip installation / extracted Kali Linux files
 
 ---
 
@@ -74,9 +69,6 @@ VMware Workstation was installed on the Windows host system to create and manage
 
 After installation, VMware Workstation was launched successfully.
 
-### Screenshot
-
-📸 **Screenshot 2:** VMware Workstation installed and opened
 
 ---
 
@@ -91,13 +83,16 @@ The Kali VM was connected to **VMnet8 (NAT)**.
 ```text
 Network Adapter: VMnet8
 Network Type: NAT
-Subnet: YOUR_NETWORK/24
-Gateway: YOUR_GATEWAY
+Gateway: 10.0.0.1
 ```
 
 ### Screenshot
 
-📸 **Screenshot 3:** VMware Virtual Network Editor showing VMnet8 configuration
+<img width="609" height="536" alt="screenshot 3" src="https://github.com/user-attachments/assets/8af50745-025a-4569-98fa-32067d0f8c00" />
+
+<img width="491" height="528" alt="screenshot 2" src="https://github.com/user-attachments/assets/6ed21986-c13e-42b3-a01b-671042871232" />
+
+
 
 ---
 
@@ -120,11 +115,14 @@ The network adapter was configured to use **VMnet8**.
 
 ### Screenshots
 
-📸 **Screenshot 4:** Kali VM hardware configuration
+<img width="741" height="718" alt="screenshot3" src="https://github.com/user-attachments/assets/b5b572f2-6d1f-4d48-9d01-f6da49392b53" />
 
-📸 **Screenshot 5:** Kali VM network adapter configured to VMnet8
 
-📸 **Screenshot 6:** Kali Linux successfully started
+<img width="1161" height="646" alt="screenshot4" src="https://github.com/user-attachments/assets/7f8b1093-751f-4573-bb33-bef5c3b6cfba" />
+
+
+<img width="1366" height="731" alt="screenshot5" src="https://github.com/user-attachments/assets/760ccd49-5231-42f1-917b-2db3bf001ab8" />
+
 
 ---
 
@@ -135,9 +133,9 @@ The network configuration inside Kali Linux was checked and configured.
 The following network information was used:
 
 ```text
-IP Address: YOUR_KALI_IP/24
-Gateway: YOUR_GATEWAY
-DNS: YOUR_DNS
+IP Address: 10.0.0.2/24
+Gateway: 10.0.0.1
+DNS: 8.8.8.8
 ```
 
 The configuration was verified using:
@@ -146,17 +144,13 @@ The configuration was verified using:
 ip a
 ```
 
-The default gateway was checked using:
-
-```bash
-ip route
-```
 
 ### Screenshot
 
-📸 **Screenshot 7:** Kali Linux `ip a` output showing the configured IP address
+<img width="879" height="543" alt="screenshot 7" src="https://github.com/user-attachments/assets/f232ad1e-232c-488e-b813-fd890c348522" />
 
-📸 **Screenshot 8:** Kali Linux routing configuration
+
+
 
 ---
 
