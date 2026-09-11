@@ -167,11 +167,15 @@ ip a
 The Kali machine showed the expected IP address on the network interface.
 
 ---
+<img width="879" height="435" alt="image" src="https://github.com/user-attachments/assets/4ea23cad-20fc-4c94-b059-15891c69f8b2" />
+
+<img width="841" height="150" alt="image" src="https://github.com/user-attachments/assets/d29514d9-2267-400e-b81a-a8879cfbe8e5" />
+
 
 ### 2. Check Default Gateway
 
 ```bash
-ping YOUR_GATEWAY
+ping 10.0.0.1
 ```
 
 The gateway responded successfully.
@@ -187,6 +191,8 @@ ping 8.8.8.8
 The test confirmed that Kali Linux could reach the internet through the VMware NAT network.
 
 ---
+<img width="530" height="254" alt="image" src="https://github.com/user-attachments/assets/985c94ad-80e9-4722-a6f3-aa2d2f5f131b" />
+
 
 ### 4. Check DNS Resolution
 
@@ -197,6 +203,8 @@ nslookup networkwalks.com
 DNS resolution was tested successfully.
 
 ---
+<img width="449" height="128" alt="image" src="https://github.com/user-attachments/assets/859b6b22-8a20-4c7c-bfab-14e3fa6a8154" />
+
 
 ### 5. Check Nmap Installation
 
@@ -207,18 +215,10 @@ nmap --version
 The installed Nmap version was displayed successfully.
 
 ---
+<img width="993" height="134" alt="image" src="https://github.com/user-attachments/assets/c08c520c-ff1b-4784-ba7c-f8db138551b9" />
 
-### Verification Screenshots
 
-📸 **Screenshot 9:** Gateway ping
 
-📸 **Screenshot 10:** Internet connectivity test
-
-📸 **Screenshot 11:** DNS resolution test
-
-📸 **Screenshot 12:** Nmap version
-
----
 
 # 💾 Step 6 — Create Clean VM Snapshot
 
@@ -228,7 +228,7 @@ The snapshot provides a restore point that can be used to return the VM to its c
 
 ### Screenshot
 
-📸 **Screenshot 13:** VMware snapshot showing the clean Kali Linux state
+<img width="1366" height="731" alt="image" src="https://github.com/user-attachments/assets/6e76c9bc-6304-42e7-888b-dea25d97c85f" />
 
 ---
 
